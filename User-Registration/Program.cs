@@ -8,7 +8,7 @@ namespace UserRegistration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Problem!");
-            Console.WriteLine("Valid User First Name!");
+            Console.WriteLine("Valid User Last Name!");
             string name = "^[A-Za-z]{3,}[ ][A-Za-z]{3,}$";
 
             Regex regex = new Regex(name);
