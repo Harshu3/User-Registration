@@ -9,10 +9,10 @@ namespace UserRegistration
         {
             Console.WriteLine("Welcome to User Registration Problem!");
             Console.WriteLine("Valid User First Name!");
-            string name = "^[A-Za-z]{3,}$";
+            string name = "^[A-Za-z]{3,}[ ][A-Za-z]{3,}$";
 
             Regex regex = new Regex(name);
-            Console.WriteLine("Enter first name:");
+            Console.WriteLine("Enter first and last name:");
             string s = Console.ReadLine();
             Console.WriteLine("It is: " + regex.IsMatch(s));
         }
