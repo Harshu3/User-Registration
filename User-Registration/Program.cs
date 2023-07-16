@@ -8,11 +8,11 @@ namespace UserRegistration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Problem!");
-            Console.WriteLine("Valid User Email ID!");
-            string name = @"[a-z]{3,}.?[a-z0-9]{3,}[@][a-z]{2,}.(com|org)$";
+            Console.WriteLine("User need to follow pre-defined Mobile Format!");
+            string phonenumber = @"^[0-9]{2,}[ ][0-9]{10}$";
 
-            Regex regex = new Regex(name);
-            Console.WriteLine("Enter Email ID:");
+            Regex regex = new Regex(phonenumber);
+            Console.WriteLine("Enter Phone Number:");
             string s = Console.ReadLine();
             Console.WriteLine("It is: " + regex.IsMatch(s));
         }
